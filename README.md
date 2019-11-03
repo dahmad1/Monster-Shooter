@@ -10,7 +10,7 @@ monsters, there is a random chance they drop power ups for your gunner. The game
 
 -	Difficulty is based off of two factors, the increasing number of monsters spawned and the speed that the screen moves.
 There are single coins randomly placed throughout the map (like one per average 15 seconds) that you can collect and you can buy new skins for your gunner (no in game improvements). There are 4 extra skins worth 100, 250, 500, 1,000, and 10,000 coins.
-<<<<Tech Spec: handleMonsterMovement() would need to have some sort of countdown that decrements on each frame, such that a new monster is added to the MonsterArray whenever it hits 0, and then it's reset to some higher number (ideally semi-randomized). There could be a similar coundown for how long until a coin appears on the stage, after which some coin object would be created. Coins should have an xPos, a yPos, an xSpeed, and NO ySpeed as they should just move left across the screen without moving towards the players. This will then also have to check every frame if the coin is overlapping with the player, and if so, remove the coin from the game and increment player's coinCount. Performance impact:low. Est time to code: 2. Priority:4.>>>>
+<<<<Tech Spec: handleMonsterMovement() would need to have some sort of countdown that decrements on each frame, such that a new monster is added to the MonsterArray whenever it hits 0, and then it's reset to some higher number (ideally semi-randomized). There could be a similar coundown for how long until a coin appears on the stage, after which some coin object would be created. Coins should have an xPos, a yPos, an xSpeed, and NO ySpeed as they should just move left across the screen without moving towards the players. This will then also have to check every frame if the coin is overlapping with the player, and if so, remove the coin from the game and increment player's coinCount. Performance impact:low. Est time to code: 2hrs. Priority:4.>>>>
 
 
 Shooter
@@ -32,7 +32,7 @@ Power ups:
 -	Power up: Shoots 2 bullets at once (15 seconds or until getting another power up)
 -	Power up: invincible for 5 seconds
 -	Power up: Random (50% chance your bullet speed quadruples, 50% chance your bullet speed halves)
-<<<<Tech Spec: these would have to each be another object type, like coins, which gets picked up by the player and spanws at random intervals. Actually, basically these are just 4 other types of coins, so do the same thing you did for that. Priority: 5. Time to code: 1 hr>>>>
+<<<<Tech Spec: these would have to each be another object type, like coins, which gets picked up by the player and spawns at random intervals. Actually, basically these are just 4 other types of coins, so do the same thing you did for that. Priority: 5. Time to code: 1 hr>>>>
 
 Monsters: <<<<I would focus on making just one type of monster first, and only if you can get this to work, then try making other types of monsters. In other words, Priority: low. Time to code: 6? hours? You'll need another array of bullets that will move every frame, except these ones are checking if they overlap with the player, and removing themselves and doing the appropriate damage if so. With the other monsters shooting bullets, performance impact could potentially also be decent (lots of objects flying all at once)>>>>
 -	Ones that try to fly straight into you (if they make contact you die)
@@ -42,3 +42,18 @@ o	Walks on the ground
 o	Health – 6 bullets
 -	Ones that shoot faster bullets (bullets can be shot and broken) and fires 2 every second
 o	Health – 1 bullet
+
+
+Timeline for Production:
+1:  
+2:  
+3:  
+4:  
+5:  
+6:  
+7:  
+8:  
+9:  
+10:
+11:
+12:
